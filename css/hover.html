@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hover</title>
+
+    <style>
+        .hover-example{
+            width: 400px;
+            height: 400px;
+            background-color: limegreen;
+            color: black;
+        }
+        .hover-example:hover{
+            background-color: blue;
+            width: 150px;
+            height: 150px;
+        }
+
+        .first-child-example{
+            color: magenta;
+        }
+        .first-child-example:first-child{
+            color: black;
+            font-size: large;
+            font-weight: 400;
+        }
+
+
+
+        .chapter p {
+    margin: 0;
+  }
+  .chapter::after {
+    content: "❦";
+    font-size: 50px;
+    text-align: center;
+    display: block;
+  }
+    </style>
+</head>
+<body>
+    <div class="hover-example">
+        hover on me ! 
+    </div>
+
+    <ol>
+        <li class="first-child-example">first</li>
+        <li class="first-child-example">second</li>
+        <li class="first-child-example">third</li>
+        <li class="first-child-example">fourth</li>
+    </ol>
+
+
+
+    <div class="chapter">This is a chapter of my book.</div>
+
+<div class="chapter">This is a second chapter of my book.</div>
+</body>
+</html>
