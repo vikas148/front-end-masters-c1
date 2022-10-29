@@ -6,3 +6,5 @@ for(let i=0; i<time; i++)
 
     console.log(cd);
 }
+
+console.log("".padStart(time,cd));
