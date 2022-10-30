@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .red-square {
+  background-color: crimson;
+  border: 2px solid green;
+  width: 100px;
+  height: 100px;
+}
+    </style>
+</head>
+<body>
+    <div class="red-square"> this </div>
+
+    <ul>
+        <li class="js-target">Unchanged</li>
+        <li class="js-target">Unchanged</li>
+        <li>Won't Change</li>
+        <li class="js-target">Unchanged</li>
+        <li>Won't Change</li>
+        <li class="js-target">Unchanged</li>
+      </ul>
+
+
+    <script>
+       // const redsquare=document.querySelector(".red-square");
+        //redsquare.style.backgroundColor="limegreen";
+
+        const elementToChange   = document.querySelectorAll(".js-target");
+        for(let i=0;i<elementToChange.length; i++)
+        {
+            const currentElement=elementToChange[i];
+            currentElement.innerText="modiffied by me";
+        }
+
+//         const elementsToChange = document.querySelectorAll(".js-target");
+// for (let i = 0; i < elementsToChange.length; i++) {
+//   const currentElement = elementsToChange[i];
+//   currentElement.innerText = "Modified by JavaScript!";
+// }
+    </script>
+</body>
+</html>
