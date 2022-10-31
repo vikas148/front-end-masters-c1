@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>api</title>
+</head>
+<body>
+    <button id="dog-btn">Gimme Doggo</button>
+    <div id="dog-target"></div>
+    <script>
+        const DOG_URL = "https://dog.ceo/api/breeds/image/random";
+
+const doggos = document.getElementById("dog-target");
+
+function addNewDoggo() {
+  const promise = fetch(DOG_URL);
+  promise
+    .then(function (response) {
+    const processingPromise = response.text();
+    return processingPromise;
+  })
+    .then(function (processedResponse) {
+    const dogObject = JSON.parse(processedResponse);
+    const img = document.createElement("img");
+    img.src = dogObject.message;
+    img.alt = "Cute doggo";
+    doggos.appendChild(img);
+  });
+}
+
+document.getElementById("dog-btn").addEventListener("click", addNewDoggo);
+    </script>
+</body>
+</html>
