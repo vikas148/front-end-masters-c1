@@ -1,0 +1,65 @@
+body::before{
+    content: "";
+    height: 800px;
+    z-index: -1;
+    opacity: .5;
+    width: 100%;
+    top: 0px;
+    position: absolute;
+    background: url(../static/fitness-gym-girl-nb-1024x768\ \(1\).jpg) no-repeat center center;
+}
+
+nav{
+    background-color:white;
+    padding:3px 12px;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+
+}
+
+li{
+    list-style: none;
+    padding: 3px 17px ;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+h2{
+    text-align: center;
+    color: white;
+}
+
+.container{
+    margin: 32px auto;
+    /* background-color: yellow; */
+    /* background: url(https://images.hdqwalls.com/download/fitness-gym-girl-nb-1024x768.jpg); */
+    max-width: 70%;
+}
+
+input ,textarea{
+    display: block;
+    padding: 3px;
+    margin: 15px auto;
+    width: 60%;
+    outline: none;
+    border: 2px solid black;
+    border-radius: 4px;
+}
+.btn{
+margin: 4px auto;
+display: block;
+padding: 5px 12px ;
+background: gray;
+color: white;
+font-weight: bold;
+font-size: 15px;
+border: 2px solid black;
+border-radius: 9px;
+cursor: pointer;
+}

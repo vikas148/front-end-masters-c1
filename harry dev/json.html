@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>json</title>
+</head>
+<body>
+    <div class="container">
+        this is json tuitorial
+<h2>JSON</h2>
+<p>json is a method that help us to convert the objects into string format
+
+    string ko network me travel krwana aasan hota hai 
+    to json ko data travelling ke liye use krte hai
+
+
+</p>
+<br>
+<hr>
+<p>json have 2 functions
+    <br>
+    1. stringfy  <br>
+        this function help to convert a valid javascript object into string <br>
+
+    2. parse <br> json.parse helps us to convert a json file to object ya string ko objects banane ke kaam aata hai    
+</p>
+    </div>
+
+    <script>
+
+        let obj={
+            name: "vikas",
+            channel: "chillkonje",
+            friend: "chillkonje gang",
+            food: "jo bhi accha ho"
+
+        }
+
+        console.log(obj);
+
+        let myobjstr = JSON.stringify(obj);
+      console.log(myobjstr);
+
+      myobjstr=myobjstr.replace("vikas","bhidu");
+      console.log(myobjstr);
+
+
+      newJsonObj= JSON.parse(myobjstr);
+      console.log(newJsonObj);
+    </script>
+</body>
+</html>
